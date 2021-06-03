@@ -1,0 +1,283 @@
+/* Default styles start */
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-ExtraBold.eot');
+	src: local('☺'), url('../fonts/Montserrat-ExtraBold.woff') format('woff'), url('../fonts/Montserrat-ExtraBold.ttf') format('truetype'), url('../fonts/Montserrat-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.eot');
+	src: local('☺'), url('../fonts/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat-Light.ttf') format('truetype'), url('../fonts/Montserrat-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Medium.eot');
+	src: local('☺'), url('../fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium.ttf') format('truetype'), url('../fonts/Montserrat-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.eot');
+	src: local('☺'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Montserrat';
+	font-size: 24px;
+	color: #1F294A;
+	font-weight: 400;
+	background-image: url(../img/background.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+a {
+	outline: unset!important;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1666px;
+	padding: 0 15px 0 15px;
+	margin: 0 auto;
+}
+/* Default styles end */
+
+
+
+
+/* Header styles start */
+.header__inner {
+	margin: 76px 0 20px;
+}
+.header__inner .logo__container svg {
+	width: 69px;
+	height: 65px;
+}
+
+
+/* Content styles start */
+.content__inner {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	padding-bottom: 35px;
+	padding-right: 15px;
+}
+.content__inner h1 {
+	margin-top: 50px;
+	font-size: 48px;
+	font-weight: 700;
+}
+.phone__container {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	right: -86px
+}
+.phone__container .phone__item {
+	position: relative;
+	z-index: 4;
+}
+.phone__container  .bellipse_top {
+	position: absolute;
+	top: 10.46%;
+    right: 22.5%;
+	z-index: 1;
+}
+.phone__container  .bellipse_bottom {
+	position: absolute;
+	bottom: 15.38%;
+    right: 17.05%;
+	z-index: 2;
+}
+.phone__container  .bellipse_left {
+	position: absolute;
+	top: 23.23%;
+    left: 16.78%;
+	z-index: 3;
+}
+.phone__container .ellipce_top {
+	position: absolute;
+	top: 0;
+	right: 22%;
+	z-index: 1;
+}
+.phone__container .ellipse_bottom {
+	position: absolute;
+	bottom: -5.38%;
+    right: 13.64%;
+	z-index: 1;
+}
+.phone__container .ellipse_left {
+	position: absolute;
+	bottom: 38.3%;
+    left: 7.09%;
+	z-index: 1;
+}
+.content__inner ul {
+	font-weight: 500;
+	list-style: disc;
+	line-height: 31px;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+.content__inner ul li::marker {
+	font-size: 14px;
+}
+.content__inner ul li:last-child {
+	list-style: none;
+}
+.content__inner .button {
+    margin-top: 40px;
+	transition: .3s;
+	display: inline-table;
+}
+.content__inner .button:hover {
+	transform: translateY(-5px);
+}
+.content__inner p {
+	font-weight: 600;
+	color: rgba(31, 41, 74, 0.5);
+	margin-top: 20px;
+}
+
+
+/* Footer styles start */
+.footer__inner {
+	margin-top: 100px;
+	margin-bottom: 68px;
+}
+.footer__inner p {
+	font-weight: 500;
+}
+.contacts__container {
+	float: right;
+	display: flex;
+}
+.contacts__container a {
+	display: block;
+	margin-right: 16px;
+	transition: .3s;
+}
+.contacts__container a:hover {
+	transform: translateY(-5px)
+}
+.contacts__container a:last-child {
+	margin-right: 0;
+}
+
+
+/* Media styles start */
+@media screen and (max-width: 1440px) {
+    .wrapper {
+		max-width: 1280px;
+	}
+}
+@media screen and (max-width: 1280px) {
+    .wrapper {
+		max-width: 992px;
+	}
+	.content__inner {
+		overflow: initial;
+	}
+	.phone__container {
+		right: -24px
+	}
+}
+@media screen and (max-width: 992px) {
+    .wrapper {
+		max-width: 100%;
+	}
+	.content__inner {
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 768px) {
+	.phone__container {
+		right: 0;
+	}
+	.bellipse_left {
+		width: 35%;
+	}
+	.bellipse_bottom {
+		width: 53%;
+	}
+	.bellipse_top {
+		width: 50%;
+	}
+	.phone__container .phone__item {
+		width: 100%;
+	}
+	.footer__inner p {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.footer__inner {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	.contacts__container {
+		float: initial;
+		display: flex;
+		justify-content: center;
+	}
+	.content__inner {
+		padding-right: 0;
+	}
+	.header__inner {
+		margin: 30px 0 20px;
+	}
+	.content__inner h1 {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 414px) {
+    .content__inner p {
+		font-size: 16px;
+	}
+	.content__inner ul {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.content__inner h1 {
+		font-size: 30px;
+	}
+}
