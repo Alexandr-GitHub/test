@@ -95,8 +95,12 @@ a {
 
 /* Content styles start */
 .content__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	overflow: hidden;
 	padding-bottom: 35px;
 	padding-right: 15px;
@@ -167,11 +171,15 @@ a {
 }
 .content__inner .button {
     margin-top: 40px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	display: inline-table;
 }
 .content__inner .button:hover {
-	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	        transform: translateY(-5px);
 }
 .content__inner p {
 	font-weight: 600;
@@ -190,15 +198,21 @@ a {
 }
 .contacts__container {
 	float: right;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .contacts__container a {
 	display: block;
 	margin-right: 16px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 .contacts__container a:hover {
-	transform: translateY(-5px)
+	-webkit-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	        transform: translateY(-5px)
 }
 .contacts__container a:last-child {
 	margin-right: 0;
@@ -227,7 +241,8 @@ a {
 		max-width: 100%;
 	}
 	.content__inner {
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -256,8 +271,12 @@ a {
 	}
 	.contacts__container {
 		float: initial;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	.content__inner {
 		padding-right: 0;
